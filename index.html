@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing game</title>
+    <link rel="icon" href="./img/keyboard.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <select name="" id="select">
+            <option value="eyse">Eyse</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+        <div class="items">
+            <h3 class="score">Score <span id="score">0</span></h3>
+            <h1 id="word" class="word"> Aweosome</h1>
+            <form action="">
+                <input id="input" type="text" autocomplete="off">
+            </form>
+            <h3>Time <span id="time" class="time">10</span></h3>
+        </div>
+        <div class="modal hidden">
+            <h1>Game Ower</h1>
+            <h3>Score <span id="lastscore">0</span></h3>
+            <button onclick="location.reload()">Again</button>
+        </div>
+        <div class="overflow hidden"></div>
+        <a href="https://www.github.com/rasullyusufov"> <img src="./img/github-sign.svg" alt="github"> Git hub</a>
+    </header>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

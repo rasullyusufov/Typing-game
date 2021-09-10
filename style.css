@@ -1,0 +1,96 @@
+@import url(https://fonts.googleapis.com/css2?family=Tomorrow:wght@100;200;300;400;500;600;800;900&display=swap);
+* {
+  font-weight: 400;
+}
+body {
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to right, rgb(75, 75, 231), rgb(212, 101, 101));
+  font-family: "Tomorrow", sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.items {
+  text-align: center;
+}
+select {
+  margin-bottom: 50px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+h1 {
+  padding: 1rem;
+}
+h1:hover {
+  transition: 1s;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+input {
+  padding: 12px 30px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(20, 20, 20, 0.6);
+  color: #ffff;
+  padding: 2rem;
+  border-radius: 10px;
+  z-index: 10;
+  color: #f34;
+}
+.overflow {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 0;
+  background-color: rgba(0, 0, 10, 0.5);
+  filter: blur(3px);
+  z-index: 9;
+}
+
+button {
+  padding: 0.8rem 2rem;
+  background-color: rgba(0, 0, 10, 0.4);
+  color: #f34;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+a{
+    text-decoration: none;
+    color: #111;
+}
+a img{
+width: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 300px) {
+  form {
+    width: 90%;
+  }
+}
